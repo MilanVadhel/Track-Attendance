@@ -1,7 +1,9 @@
 # Track-Attendance
 Hello Friends,
 This is a simple Attendance Tracker Application which is made on the SQLite database. 
-*************************Features**************************
+
+
+*******************************************************************Features***************************************************************
 1. Add student information.
 2. Update student information.
 3. Export all student's information in the Excel file.
