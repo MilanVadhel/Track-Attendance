@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button" parent="Theme.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@drawable/buttton</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+</resources>

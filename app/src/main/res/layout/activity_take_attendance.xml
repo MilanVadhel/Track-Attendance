@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeAttendanceActivity"
+    android:id="@+id/takeAttendanceActivity"
+    android:gravity="center">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+       <!-- <LinearLayout
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/DarkBlue"
+                android:text="Take"
+                android:textSize="45sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Attendance"
+                android:textColor="@color/LightBlue"
+                android:textStyle="bold"
+                android:textSize="45sp"/>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/Title"
+            android:layout_marginTop="15sp"
+            android:orientation="vertical"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dateTextInputLayout"
+                    style="@style/TextInputLayout"
+                    android:layout_width="160dp"
+                    android:layout_height="60sp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EditText_todaysDate"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/Button_todaysDateTaker"
+                    style="@style/Button"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="44dp"
+                    android:drawableEnd="@drawable/ic_calender"
+                    android:padding="5dp"
+                    android:text="Date"
+                    app:layout_constraintBottom_toBottomOf="@+id/dateTextInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/dateTextInputLayout"
+                    ></Button>
+
+                <EditText
+                    android:id="@+id/EditText_attendanceNumber"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/Button_todaysDateTaker"
+                    app:layout_constraintStart_toStartOf="@+id/dateTextInputLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/dateTextInputLayout"
+                    android:gravity="center"
+                    android:hint="AID"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="25sp"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/Button_addAttendance"
+                    style="@style/Button"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="ADD"
+                    app:layout_constraintEnd_toEndOf="@+id/EditText_attendanceNumber"
+                    app:layout_constraintStart_toStartOf="@+id/EditText_attendanceNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/EditText_attendanceNumber"></Button>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

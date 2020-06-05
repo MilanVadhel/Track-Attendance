@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/LightBlue</item>
+        <item name="colorPrimaryDark">@color/LightDarkBlue</item>
+        <item name="colorAccent">@color/LightBlue</item>
+    </style>
+
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryDark">@color/White</item>
+    </style>
+
+    <style name="MainScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryDark">@color/White</item>
+
+    </style>
+
+    <style name="AddChildScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/LightBlue</item>
+    </style>
+
+    <style name="TakeAttendanceScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/LightBlue</item>
+    </style>
+
+    <style name="Button" parent="Theme.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@drawable/buttton</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:elevation" tools:targetApi="lollipop">10dp</item>
+
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/Grey</item>
+        <item name="boxStrokeColor">@color/LightBlue</item>
+    </style>
+
+    <style name="EditText" parent="Theme.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+</resources>

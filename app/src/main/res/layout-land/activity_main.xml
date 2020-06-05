@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainactivity_layout"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/Button_addNewChild"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/addchild"
+            style="@style/Button"
+            />
+        <ImageButton
+            android:id="@+id/Button_takeAttendance"
+            style="@style/Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/attendancebutton"
+            android:layout_marginLeft="20dp"
+            />
+        <ImageButton
+            android:id="@+id/Button_updateProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/updatebutton"
+            style="@style/Button"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/Button_reportGenerate"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/reportbutton"
+                style="@style/Button"
+                />
+            <ImageButton
+                android:id="@+id/Button_birthday"
+                style="@style/Button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/birthdaybutton"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

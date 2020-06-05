@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewChildActivity"
+    android:id="@+id/AddNewChildActivity"
+    android:padding="5dp"
+    android:gravity="center"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childSurname"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:hint="Surname"
+            app:layout_constraintLeft_toLeftOf="@+id/Title"
+            app:layout_constraintTop_toBottomOf="@+id/Title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childSurname"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childName"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="25dp"
+            android:hint="Name"
+            app:layout_constraintBottom_toBottomOf="@+id/EditTextLayout_childSurname"
+            app:layout_constraintStart_toEndOf="@+id/EditTextLayout_childSurname"
+            app:layout_constraintTop_toTopOf="@+id/EditTextLayout_childSurname"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childName"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childFatherName"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="25dp"
+            android:hint="Fathername"
+            app:layout_constraintLeft_toRightOf="@+id/EditTextLayout_childName"
+            app:layout_constraintTop_toTopOf="@+id/EditTextLayout_childName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childFatherName"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childMotherName"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="4dp"
+            android:hint="MotherName"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextLayout_childSurname"
+            tools:layout_editor_absoluteX="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childMotherName"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childDOB"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:hint="DOB (1/1/2020)"
+            app:layout_constraintStart_toStartOf="@+id/EditTextLayout_childName"
+            app:layout_constraintTop_toTopOf="@+id/EditTextLayout_childMotherName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childDOB"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Button_dobTaker"
+            style="@style/Button"
+            android:layout_width="198dp"
+            android:layout_height="48dp"
+            android:drawableEnd="@drawable/ic_calender"
+            android:padding="5dp"
+            android:text="Date"
+            app:layout_constraintStart_toStartOf="@+id/EditTextLayout_childFatherName"
+            app:layout_constraintTop_toTopOf="@+id/EditTextLayout_childDOB"></Button>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childContactNo"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55sp"
+            android:layout_marginTop="4dp"
+            android:hint="Contact "
+            app:layout_constraintTop_toBottomOf="@+id/EditTextLayout_childMotherName"
+            tools:layout_editor_absoluteX="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childContactNo"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childWhatsappNo"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:hint="Whatsapp"
+            app:layout_constraintStart_toStartOf="@+id/EditTextLayout_childDOB"
+            app:layout_constraintTop_toTopOf="@+id/EditTextLayout_childContactNo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childWhatsappNo"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childHomeNo"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:hint="Home No"
+            app:layout_constraintStart_toStartOf="@+id/Button_dobTaker"
+            app:layout_constraintTop_toTopOf="@+id/EditTextLayout_childWhatsappNo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childHomeNo"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childPartNo"
+            style="@style/TextInputLayout"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="4dp"
+            android:hint="Part No"
+            app:layout_constraintStart_toStartOf="@+id/EditTextLayout_childContactNo"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextLayout_childContactNo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childPartNo"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayout_childSocietyName"
+            style="@style/TextInputLayout"
+            android:layout_width="420dp"
+            android:layout_height="55dp"
+            android:hint="Society Name"
+            app:layout_constraintStart_toStartOf="@+id/EditTextLayout_childWhatsappNo"
+            app:layout_constraintTop_toTopOf="@+id/EditTextLayout_childPartNo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditText_childSocietyName"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Button_addChildInfo"
+            style="@style/Button"
+            android:layout_width="645dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:text="ADD"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextLayout_childSocietyName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
