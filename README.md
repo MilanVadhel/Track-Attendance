@@ -1,5 +1,5 @@
 # Track-Attendance
-Hello Friends
+Hello Friends,
 This is a simple Attendance Tracker Application which is made on the SQLite database. 
 *************************Features**************************
 1. Add student information.
